@@ -2,6 +2,12 @@ from fonctions import *
 import random
 
 print("Bonjour,bienvenue sur le jeu de pendu by Nathan & Simon")
+print("veuillez-vous inscrire si ce n'est pas déja fait")
+print("quel est/sera votre pseudo?")
+user= input("votre nom d'utilisateur")
+log = open("user.txt", "a")
+for nom in log:
+    if
 nombre_de_vie = 8
 mot_crypte = ""
 liste_mots = ["banane", "arbre", "coque", "travail", "machine", "python", "programme", "abeille",
@@ -22,7 +28,7 @@ while mot_trouve != mot_a_trouver and nombre_de_vie > 0:
         for lettre in chaine_lettres_eronnees:
             if proposition == lettre in chaine_lettres_eronnees:
                 print("Tu as déjà proposé cette lettre")
-    if verification(proposition, mot_a_trouver):
+    if verification(proposition, mot_a_trouver):from
         chaine_lettres_trouvees += proposition
         print(remplacement(mot_a_trouver, chaine_lettres_trouvees))
     elif proposition == lettre in chaine_lettres_eronnees:
